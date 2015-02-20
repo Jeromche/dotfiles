@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 set nocompatible               " be iMproved
 set t_Co=256
 
@@ -17,8 +19,8 @@ set shiftwidth=2
 set tabstop=2
 
 syntax enable
-set background=light
-colorscheme solarized
+set background=dark
+colorscheme molokai
 set number
 
 " Folding
@@ -57,7 +59,5 @@ imap <Esc>[B <Down>
 " Navigate tabs
 nmap <C-j> :tabn<cr>
 nmap <C-k> :tabp<cr>
-
-execute pathogen#infect()
 
 set rtp+=~/.vim/bundle/powerline/bindings/vim
