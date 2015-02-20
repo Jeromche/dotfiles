@@ -24,9 +24,19 @@ set number
 " Folding
 set foldmethod=indent
 
+" Let leader be a comma
+let mapleader=","
+
 " Searching
 set hlsearch
-nmap <leader>/ :nohl<cr>
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+nmap <leader>/ :nohlsearch<cr>
+
+" Toggle set paste
+nmap <leader>o :set paste!<CR>
 
 " Vertical line to mark 85 chars
 set colorcolumn=85
@@ -47,3 +57,7 @@ imap <Esc>[B <Down>
 " Navigate tabs
 nmap <C-j> :tabn<cr>
 nmap <C-k> :tabp<cr>
+
+execute pathogen#infect()
+
+set rtp+=~/.vim/bundle/powerline/bindings/vim
