@@ -14,6 +14,8 @@ fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-ssh-add ~/.ssh/id_rsa
+# Turn on when developing for Spons
+#ssh-add ~/.ssh/id_rsa
 
 source ~/.profile
+
