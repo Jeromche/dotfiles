@@ -17,5 +17,8 @@ fi
 # Turn on when developing for Spons
 #ssh-add ~/.ssh/id_rsa
 
+# Turn on VIM mode.
+set -o vi
+
 source ~/.profile
 
