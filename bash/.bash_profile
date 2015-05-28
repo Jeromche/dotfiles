@@ -22,3 +22,6 @@ set -o vi
 
 source ~/.profile
 
+# This enables mouse support in Midnight Commander.
+export TERM=xterm
+
