@@ -61,3 +61,6 @@ nmap <C-j> :tabn<cr>
 nmap <C-k> :tabp<cr>
 
 set rtp+=~/.vim/bundle/powerline/bindings/vim
+
+nnoremap <F5> :GundoToggle<CR>
+
