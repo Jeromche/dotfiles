@@ -4,7 +4,8 @@ source $(brew --prefix nvm)/nvm.sh
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-source ~/.bash_prompt
+force_color_prompt=yes
+
 source ~/.bash_aliases
 source ~/.local/bin/bashmarks.sh
 
@@ -20,8 +21,12 @@ fi
 # Turn on VIM mode.
 set -o vi
 
-source ~/.profile
-
 # This enables mouse support in Midnight Commander.
 export TERM=xterm
 
+source ~/.bash_prompt
+
+test -e ${HOME}/.iterm2_shell_integration.bash && source ${HOME}/.iterm2_shell_integration.bash
+
+# If you installed the SDK via Homebrew, otherwise ~/Library/Android/sdk
+export ANDROID_HOME=/usr/local/opt/android-sdk

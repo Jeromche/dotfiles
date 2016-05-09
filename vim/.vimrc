@@ -19,8 +19,8 @@ set shiftwidth=2
 set tabstop=2
 
 syntax enable
-set background=dark
-colorscheme molokai
+set background=light
+colorscheme solarized
 set number
 
 " Folding
@@ -63,4 +63,8 @@ nmap <C-k> :tabp<cr>
 set rtp+=~/.vim/bundle/powerline/bindings/vim
 
 nnoremap <F5> :GundoToggle<CR>
+
+" create a bar for airline
+set laststatus=2
+let g:airline_powerline_fonts=1 
 

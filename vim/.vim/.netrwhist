@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/private/etc/apache2/extra'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/jeromche/Documents/Experiments/react-js-tutorials/3-flux/src/js/stores'
+let g:netrw_dirhist_2='/Users/jeromche/Documents/Experiments/react-js-tutorials/3-flux/src/js'
+let g:netrw_dirhist_3='/Users/jeromche/Documents/Experiments/react-js-tutorials/3-flux/src/js/pages'
